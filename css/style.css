@@ -1,0 +1,22 @@
+#logo{
+    background-color: red;
+    color: white;
+    padding: 1px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    background-color: red;
+    color: white;
+    width: 150px;
+    border: 0;
+    font-size: 15px;
+}
+#LogoPoke{
+    width: 150px;
+}
+.invisible{
+    visibility: hidden;
+}
