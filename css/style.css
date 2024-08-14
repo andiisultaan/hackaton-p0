@@ -250,7 +250,7 @@ body {
   width: 100%;
   font-size: 18px;
   padding: 11px;
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .searchInput {
@@ -280,7 +280,7 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 10%;
-  width: 80%;
+  width: 200px;
 }
 
 .menu .row .menu-card .menu-card-title {
