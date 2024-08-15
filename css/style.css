@@ -100,9 +100,11 @@ body {
 #hamburger-menu {
   display: none;
 }
+#shopping-cart{
+  
+}
 
 /* Hero Section */
-
 
 .hero {
   min-height: 100vh;
@@ -265,6 +267,78 @@ body {
   display: flex;
   margin: 10px;
 }
+/* Cart Item Actions */
+.cart-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-item-actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-item-actions button.edit {
+  color: blue;
+}
+
+.cart-item-actions button.delete {
+  color: red;
+}
+
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 300px;
+  /* optional: adjust according to your design */
+  margin: 15px;
+  /* Add margin for spacing between cards */
+
+}
+
+.menu-card-btn {
+  background-color: #f8f8f8;
+  margin-top: 50px;
+  border: 2px;
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+}
+
+.menu-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.menu-card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.menu-card-title {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.menu-card-price {
+  font-size: 1rem;
+  color: #0a0a0a;
+}
 
 .menu .row {
   display: flex;
@@ -308,9 +382,6 @@ body {
   background-color: #ffffff;
   color: #000;
 }
-
-
-
 /* Contact Section */
 
 .contact .row {

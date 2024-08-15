@@ -1,4 +1,3 @@
-
 function searchPokemon() {
     const input = document.querySelector('.searchInput').value.toLowerCase();
     const cards = document.querySelectorAll('.menu-card');
