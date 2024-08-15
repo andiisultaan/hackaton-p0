@@ -10,12 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css">
   </head>
   <body>
     <!-- Navbar start -->
@@ -29,7 +32,6 @@
       </div> -->
 
       <div class="navbar-extra">
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
         <a href="login.html" id="login-link" class="btn-masuk">Masuk</a>
       </div>
@@ -38,7 +40,7 @@
 
     <!-- Admin Panel Start -->
     <div class="container">
-      <h2>Admin Panel</h2>
+      <h2 class="my-4">Admin Panel</h2>
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addCardModal" id="addCardBtn">Tambah Kartu Pokemon</button>
 
       <!-- Table for displaying cards -->
@@ -49,10 +51,13 @@
             <th>Harga Kartu</th>
             <th>Jumlah Kartu</th>
             <th>Gambar Kartu</th>
+            <th>Action</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="table" id="card-table">
           <!-- Data will be inserted here -->
+
+
         </tbody>
       </table>
     </div>
@@ -90,7 +95,7 @@
         </div>
       </div>
     </div>
-
+    
     <!-- Feather Icons -->
     <script>
       feather.replace()
@@ -106,14 +111,19 @@
               // Menutup modal
               document.getElementById('closeModal').addEventListener('click', function() {
                 document.getElementById('addCardModal').style.display = 'none';
+                document.getElementById('card-form').reset();
               });
 
               // Menutup modal saat klik di luar modal
               window.addEventListener('click', function(event) {
+                
                 if (event.target === document.getElementById('addCardModal')) {
                   document.getElementById('addCardModal').style.display = 'none';
                 }
+                
               });
     </script>
+    <script src="js/admin.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -183,6 +183,10 @@ body {
   padding: 8rem 7% 1.4rem;
 }
 
+.about img {
+  border-radius: 15px;
+}
+
 .about h2,
 .menu h2,
 .contact h2 {
@@ -268,7 +272,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f8f8f8;
+  background-color: var(--primary);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -299,10 +303,14 @@ body {
 }
 
 .menu-card-price {
-  font-size: 1rem;
-  color: #0a0a0a;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
 }
-
+.menu-card-quantity {
+  font-size: 1rem;
+  color: #ffffff;
+}
 .menu .row {
   display: flex;
   flex-wrap: wrap;
@@ -321,6 +329,49 @@ body {
 }
 
 .menu .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+.menu .row-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu .row-card .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.menu .row-card .menu-card img {
+  border-radius: 10%;
+  width: 200px;
+}
+
+.menu .row-card .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+/* row card 2 */
+.menu .row-card-2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu .row-card-2 .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.menu .row-card-2 .menu-card img {
+  border-radius: 10%;
+  width: 200px;
+}
+
+.menu .row-card-2 .menu-card .menu-card-title {
   margin: 1rem auto 0.5rem;
 }
 
@@ -701,7 +752,44 @@ footer .credit a {
 }
 
 h2 {
-  color: #343a40;
+  color: #ffffff;
+}
+
+.my-4 {
+  color: #272525;
+}
+
+table td input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Style umum untuk tombol di dalam tabel */
+table button {
+  background-color: #dc3545; /* Warna latar belakang merah */
+  color: white; /* Warna teks putih */
+  padding: 6px 12px; /* Padding untuk tombol */
+  border: none; /* Hilangkan border */
+  border-radius: 4px; /* Sudut tombol melengkung */
+  font-size: 14px; /* Ukuran font */
+  cursor: pointer; /* Kursor pointer saat di-hover */
+  transition: background-color 0.3s ease; /* Efek transisi saat warna berubah */
+  margin: 10px;
+}
+
+/* Hover effect untuk tombol di dalam tabel */
+table button:hover {
+  background-color: #c82333; /* Warna latar belakang lebih gelap saat di-hover */
+}
+
+/* Menyesuaikan ukuran tombol agar sesuai dengan tampilan tabel */
+table button {
+  display: inline-block; /* Menampilkan tombol sebagai blok inline */
+  margin: 0; /* Menghilangkan margin */
 }
 
 .table {
@@ -712,13 +800,16 @@ h2 {
   overflow: hidden;
 }
 
-.table th,
-.table td {
+.table th {
   padding: 15px;
   border-bottom: 1px solid #ddd;
 }
+.table td {
+  padding-left: 45px;
+  border-bottom: 1px solid #ddd;
+}
 
-.table tr:nth-of-type(odd) {
+.table tr {
   background-color: var(--primary);
 }
 
@@ -913,4 +1004,17 @@ h2 {
 
 .btn-delete:hover {
   background-color: #c82333;
+}
+
+.btn-add-to-cart {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn-add-to-cart:hover {
+  background-color: #218838;
 }
