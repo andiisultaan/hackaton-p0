@@ -712,14 +712,19 @@ h2 {
   overflow: hidden;
 }
 
-.table th,
-.table td {
+.table th{
   padding: 15px;
   border-bottom: 1px solid #ddd;
 }
+.table td {
+  padding-left: 45px;
+  border-bottom: 1px solid #ddd;
+  
+}
 
-.table tr:nth-of-type(odd) {
+.table tr {
   background-color: var(--primary);
+ 
 }
 
 .modal {
